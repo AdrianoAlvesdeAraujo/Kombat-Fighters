@@ -23,8 +23,8 @@ public class Fighter {
 
     public void apresentar(){
         System.out.println("---------Aprensentação----------");
-        System.out.println("Nome: "+getNome());
-        System.out.println("Idade: "+ getIdade());
+        System.out.println("Apresntamos agora o lutador: "+getNome());
+        System.out.println(getIdade()+" anos");
         System.out.println("altura: "+getAltura());
         System.out.println("peso: "+getPeso());
         System.out.println("categoria: "+getCategoria());
@@ -97,25 +97,28 @@ public class Fighter {
 
     private void setPeso(float peso) {
         this.peso = peso;
-        if(this.peso<=52.5f){
-            setCategoria("Inválido");
-        }else if((this.peso>52.5f) && (this.peso<=72.3)){
-            setCategoria("Peso Leve");
-        }else if((this.peso>72.3f) && (this.peso<=83.3)){
-            setCategoria("Peso Médio");
-        }else if((this.peso>83.3f) && (this.peso<=110.00)){
-            setCategoria("Peso Pesado");
-        }else{
-            setCategoria("Inválido");
-        }
+        setCategoria();
+
+
     }
 
     private String getCategoria() {
         return categoria;
     }
 
-    private void setCategoria(String categoria) {
-        this.categoria = categoria;
+    private void setCategoria() {
+        if(this.peso<=52.5f){
+            this.categoria="Inválido";
+        }else if(this.peso<=72.3){
+            this.categoria="Leve";
+        }else if(this.peso<=83.3){
+            this.categoria="Médio";
+        }else if(this.peso<=110.00){
+            this.categoria="Pesado";
+        }else{
+            this.categoria="Inválido";
+        }
+
     }
 
     private int getVitorias() {
