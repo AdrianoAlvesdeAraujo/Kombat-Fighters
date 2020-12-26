@@ -59,7 +59,7 @@ public class Fighter {
 
     }
 
-    private String getNome() {
+    public String getNome() {
         return nome;
     }
 
@@ -67,7 +67,7 @@ public class Fighter {
         this.nome = nome;
     }
 
-    private String getNacionalidade() {
+    public String getNacionalidade() {
         return nacionalidade;
     }
 
@@ -75,7 +75,7 @@ public class Fighter {
         this.nacionalidade = nacionalidade;
     }
 
-    private int getIdade() {
+    public int getIdade() {
         return idade;
     }
 
@@ -83,7 +83,7 @@ public class Fighter {
         this.idade = idade;
     }
 
-    private float getAltura() {
+    public float getAltura() {
         return altura;
     }
 
@@ -91,7 +91,7 @@ public class Fighter {
         this.altura = altura;
     }
 
-    private float getPeso() {
+    public float getPeso() {
         return peso;
     }
 
@@ -102,7 +102,7 @@ public class Fighter {
 
     }
 
-    private String getCategoria() {
+    public String getCategoria() {
         return categoria;
     }
 
